@@ -25,7 +25,8 @@ body {
 
 #coupon {
     position: fixed;
-	top: 350px;
+	top: 60%;
+	/*top: 350px;*/
 	left: -90px;
 }
 
