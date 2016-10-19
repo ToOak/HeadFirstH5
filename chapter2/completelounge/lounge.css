@@ -1,3 +1,6 @@
+/*
+	https://jigsaw.w3.org/css-validator/
+*/
 body {
 	font-family: sans-serif;
 }
@@ -19,4 +22,10 @@ em{
 }
 p.greentea {
 	color: green;
+}
+p.raspberry{
+	color: blue;
+}
+p.blueberry{
+	color: purple;
 }
