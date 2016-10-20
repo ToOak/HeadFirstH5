@@ -1,2 +1,4 @@
 # HeadFirstH5
-the head first for html+css+js
+    http://www.wickedlysmart.com/
+
+    the head first for html+css+js
