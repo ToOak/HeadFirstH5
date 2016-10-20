@@ -29,7 +29,21 @@ table {
   border:           thin solid black;
   caption-side:     bottom;
   border-collapse:  collapse;
+  /*border-spacing: 10px 20px;*/
 }
+
+/*tr:nth-child(even){*/
+  /*background-color: #fcbaff;*/
+/*}*/
+/*tr:nth-child(odd){*/
+  /*background-color: #fcba7a;*/
+/*}*/
+/*tr:nth-child(2n){*/
+  /*background-color: #fcba7a;*/
+/*}*/
+/*tr:nth-child(2n+1){*/
+  /*background-color: #fcbaff;*/
+/*}*/
 
 table table th {
   background-color: white;
@@ -63,7 +77,7 @@ caption {
 }
 
 li {
-  /* list-style-image: url(images/backpack.gif); */
+  list-style-image: url(images/backpack.gif);
   padding-top:      5px;
   margin-left:      10px;
 }
