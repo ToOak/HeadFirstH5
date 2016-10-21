@@ -8,6 +8,7 @@ window.onload = init;
 
 function init() {
 	getSales();
+	// getSales_XHRv1();
 }
 
 //
@@ -18,7 +19,8 @@ function init() {
 function getSales_XHRv1() {
 	// change the URL to match the location where you
 	// put the sales.json file
-	var url = "http://localhost/gumball/sales.json";
+	// var url = "http://localhost/gumball/sales.json";
+	var url = "sales.json";
 	var request = new XMLHttpRequest();
 	request.open("GET", url);
 	request.onreadystatechange = function() {
@@ -37,7 +39,8 @@ function getSales_XHRv1() {
 function getSales() {
 	// change the URL to match the location where you
 	// put the sales.json file
-	var url = "http://localhost/gumball/sales.json";
+	// var url = "http://localhost/gumball/sales.json";
+	var url = "sales.json";
 	var request = new XMLHttpRequest();
 	request.open("GET", url);
 	request.onload = function() {

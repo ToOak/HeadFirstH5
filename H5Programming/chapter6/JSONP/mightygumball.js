@@ -19,6 +19,7 @@ function handleRefresh() {
 				"?callback=updateSales" +
 				"&lastreporttime=" + lastReportTime +
 				"&random=" + (new Date()).getTime();
+	console.info("url: " + url);
 	var newScriptElement = document.createElement("script");
 	newScriptElement.setAttribute("src", url);
 	newScriptElement.setAttribute("id", "jsonp");
