@@ -30,6 +30,13 @@ window.onload = function() {
 	                                     ["5:00pm", "9:00pm"]);
 	alert(forbiddenPlanetMovie.getNextShowing());
 
+    for (fm in forbiddenPlanetMovie){
+        console.info("forbiddenPlanetMovie has " + fm + " property");
+        if (fm == "genre"){
+            console.info("======= This genre is " + forbiddenPlanetMovie[fm] + " =======");
+        }
+    }
+
 }
 
 function Movie(title, genre, rating, showtimes) {
@@ -95,6 +102,10 @@ function getNextShowing(movie) {
 function getTimeFromString(str) {
 	var theTime = new Date();
 	var time = str.match(/(\d+)(?::(\d\d))?\s*(p?)/);
+    time.forEach(function (item) {
+        console.info("timeItem[" + item.index + "]: " + item)
+    })
+    console.info("time: " + time.toString());
 	theTime.setHours( parseInt(time[1]) + (time[3] ? 12 : 0) );
 	theTime.setMinutes( parseInt(time[2]) || 0 );
 	return theTime.getTime();
