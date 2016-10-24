@@ -18,8 +18,14 @@ function drawTriangle(canvas, context) {
 	context.lineTo(125, 30);
 	context.closePath();
 	context.lineWidth = 5;
+	context.strokeStyle = "#666";
 	context.stroke();
 	context.fillStyle = "red";
+	context.fill();
+
+	// blablablablabla
+	context.clipPath();
+	context.fillStyle = "blue";
 	context.fill();
 }
 </script>
