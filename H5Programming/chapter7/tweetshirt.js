@@ -15,6 +15,8 @@ function previewHandler() {
 	fillBackgroundColor(canvas, context);
 
 	var selectObj = document.getElementById("shape");
+	console.info("select: " + JSON.stringify(selectObj));
+	console.info("index: " + selectObj.selectedIndex);
 	var index = selectObj.selectedIndex;
 	var shape = selectObj[index].value;
 
