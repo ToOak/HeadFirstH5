@@ -3,6 +3,10 @@
 <title>Fuse</title>
 <meta charset="utf-8">
 <script>
+//if (window["localStorage"]){
+if (!window.localStorage){
+    alert("can not support localStorage !");
+}
 
 localStorage.setItem("fuse", "-");
 while(true) {
