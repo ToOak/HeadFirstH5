@@ -5,6 +5,14 @@ var videos = {
 
 var effectFunction = null;
 
+function errorHandle() {
+	var video = document.getElementById("video");
+	if (video.error){
+		video.poster = "images/tv.png";
+		alert(video.error.code + ": " + video.error.message);
+	}
+}
+
 window.onload = function() {
 
 	var video = document.getElementById("video");
@@ -34,6 +42,7 @@ window.onload = function() {
 	//video.onended = endedHandler;
 	video.addEventListener("play", processFrame, false);
 	video.addEventListener("ended", endedHandler, false);
+	video.addEventListener("error",errorHandle,false);
 
 	pushUnpushButtons("video1", []);
 	pushUnpushButtons("normal", []);
