@@ -5,8 +5,24 @@
 <meta charset="utf-8">
 </head>
 <body>
+<p id="status"></p>
 <p id="quote"></p>
+<button id="end">end worker</button>
 <script>
+
+window.onload = function () {
+    if (!window["Worker"]){
+        var status = document.getElementById("status");
+        status.innerHTML = "Bummer, no Web workers";
+    }
+    document.getElementById("end").onclick = function () {
+        if (worker){
+//            worker.terminate();
+            worker.postMessage("end");
+        }
+    }
+}
+
 var worker = new Worker("quote.js");
 worker.onmessage = function(event) {
 	document.getElementById("quote").innerHTML = event.data;

@@ -9,5 +9,14 @@ function postAQuote() {
 	postMessage(quotes[index]);
 }
 postAQuote();
-setInterval(postAQuote, 3000);
+// close();
+setInterval(postAQuote, 1000);
+
+onmessage = function (event) {
+    if (event.data == "end"){
+    //     alert("11");    // Uncaught ReferenceError: alert is not defined
+        console.info("1111");
+        close();
+    }
+}
 
