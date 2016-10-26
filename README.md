@@ -5,3 +5,4 @@
 
     HTML&CSS:       Head First HTML与CSS（第2版）
     H5Programming:  Head First HTML5 Programming（中文版）
+    jquery:         Head First Jquery（中文版）
