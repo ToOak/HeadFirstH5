@@ -13,7 +13,11 @@
 	<button id="disappear">Disappear/Re-appear</button>     
 	
 	<div id="change_me">Make Me Do Stuff!</div> 
-<script> 
+<script>
+	$(function () {
+		alert("hello jquery: " + new Date().toLocaleString());
+	})
+
 	$(document).ready(function() {
 		$("#move_up").click( function() {
 				$("#change_me").animate({top:30},200); 
